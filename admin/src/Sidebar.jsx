@@ -17,7 +17,17 @@ function Sidebar({ openSidebarToggle, OpenSidebar }) {
       className={openSidebarToggle ? "sidebar-responsive" : ""}
     >
       <div className="sidebar-title">
-        <div className="sidebar-brand">ADMIN</div>
+        <div className="profile-container">
+          <div className="profile-image">
+            {/* Add your profile image here */}
+            <img
+              src="https://media.istockphoto.com/id/1300845620/vector/user-icon-flat-isolated-on-white-background-user-symbol-vector-illustration.jpg?s=612x612&w=0&k=20&c=yBeyba0hUkh14_jgv1OKqIH0CCSWU_4ckRkAoy2p73o="
+              alt="Profile"
+              className="avatar-image"
+            />
+          </div>
+          <div className="sidebar-brand">ADMIN</div>
+        </div>
         <span className="icon close_icon" onClick={OpenSidebar}>
           X
         </span>

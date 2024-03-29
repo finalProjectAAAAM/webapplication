@@ -10,7 +10,7 @@ const User = () => {
   useEffect(() => {
     const fetchUsers = async () => {
       try {
-        const response = await axios.get("http://localhost:3001/allUsers");
+        const response = await axios.get("http://localhost:3001/use/allUsers");
         setUsers(response.data);
       } catch (error) {
         console.error("Error fetching users:", error);
@@ -22,7 +22,7 @@ const User = () => {
 
   const deleteUser = async (iduser) => {
     try {
-      await axios.delete(`http://localhost:3001/deleteuser/${iduser}`);
+      await axios.delete(`http://localhost:3001/use/deleteuser/${iduser}`);
       // Filter out the deleted user from the list
       setUsers(users.filter((user) => user.iduser !== iduser));
     } catch (error) {
