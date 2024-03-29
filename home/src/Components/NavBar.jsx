@@ -2,6 +2,7 @@ import React from "react";
 import { AppBar, Toolbar, Typography, Button, IconButton } from "@mui/material";
 import { styled } from "@mui/material/styles";
 import { Navigate, useNavigate } from "react-router-dom";
+import LogoImage from "./asset/image6.png"; // Import your logo image
 
 const NavBar = () => {
   const navigate = useNavigate();
@@ -48,7 +49,9 @@ const NavBar = () => {
   return (
     <StyledAppBar position="static">
       <Toolbar>
-        <StyledTypography variant="h10">LAMA ZONE</StyledTypography>
+        <StyledTypography variant="h10">
+          <img src={LogoImage} alt="Logo" style={{ height: "150px", width:"300px"}} /> {/* Insert the image here */}
+        </StyledTypography>
 
         <CenteredToolbar>
           <StyledButton

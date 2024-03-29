@@ -8,6 +8,7 @@ import img1 from "./asset/image1.png";
 import img2 from "./asset/image2.png";
 import img3 from "./asset/image3.png";
 import img4 from "./asset/image4.png";
+import Footer from "./Footer.jsx"
 
 const CenteredContainer = styled(Container)({
   display: "flex",
@@ -206,6 +207,7 @@ const Homepage = () => {
           </CircleContainer>
         </CenteredContainer>
       </div>
+      <Footer/>
     </div>
   );
 };
